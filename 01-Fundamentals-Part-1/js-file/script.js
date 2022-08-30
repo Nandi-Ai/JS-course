@@ -1,63 +1,44 @@
-/* #1
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
-
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn  = massJohn / heightJohn ** 2;
-
-const markHigherBMI = BMIMark > BMIJohn;
-
-console. log (BMIMark, BMIJohn, markHigherBMI);
-*/
-
-
-
-/*
-const firstName = 'Reuven';
-const job = 'teacher';
-const birthYear = 1994;
-const year = 2022;
-
-const Me = 'Im ' + firstName + ', a '  + (year -
-birthYear) + ' years old ' + job + '!';
-console.log(Me);
-*/
-
+// Comment Google v8 JS
+// let name = 'Baba';
+// Cannot be reserved keyword
+// Should be meaningful
+// Cannot start with a number
+// Cannot contain space or hyphen
+// Camel Notation case-sensitive
+let name = "Baba"; //String Literal
+let age = 12; // Numebr Literal
+let x = 10;
+let y = 12;
+let isDone = true; //Boolean
+let yoyo= undefined; //undefined
+let selectedColor = null; // clear value
+let firstName = 'Shapi', lastName = 'Bulele';
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 'brown';
+selectedColors[4] = 1;
+selectedColors[9] = 'white';
+name = "Kukia"
+typeof name;
+let person = {
+name: 'Babu',
+age: 27
+}; //object literal
 
 
-
-
-
-// if
-/*
-const age = 15;
-
-if (age >= 17){
-   console.log('Sarah can start driving license');
+function greet(name, lastName) {
+    console.log('Hello '+ name + ' ' + lastName);
 }
-else{
-   const yearLeft = 17 - age;
-   console.log('Sarah is too young. Wait another '+yearLeft+ ' years');
-}
-*/
 
-// #2  
-/*
-const massMark = 95;
-const heightMark = 1.88;
-const massJohn = 85;
-const heightJohn = 1.76;
-
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn  = massJohn / heightJohn ** 2;
-console.log(BMIMark, BMIJohn)
-
-if( BMIMark > BMIJohn){
-   console.log('Mark BMI '+BMIMark+ ' is higher than John!')
+function square(number) {
+    return number * number 
 }
-else{
-   console.log('John BMI '+BMIJohn+ ' is higher than Mark!')
-}
-*/
+greet('Baruch', 'Levi');
+age = square(21);
+// dot notaion
+person.name = "Odem";
+// Bracket Notation
+person['name'] = "Mary-Ann";
+console.log(age);
+console.log(selectedColors[1])
+console.log(person);
+console.log("Having fun with JS");

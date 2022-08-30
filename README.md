@@ -1,1 +1,1 @@
-# javascript-course-Nandi
+# JavaScript-course
